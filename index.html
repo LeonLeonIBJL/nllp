@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Lottery Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="./letreiro.png" alt="New Lottery" class="title-image">
+        <p class="description">Não é apenas mais um jogo de Sorte, e sim uma oportunidade de se divertir e fazer uma grana extra, ou até mudar de vida.</p>
+        <p>Assista o vídeo abaixo:</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XfAUmscFAm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Preencha o formulário abaixo para receber todas as informações, sem pagar nada:</p>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="tel" id="phone" placeholder="Telefone com DDD (WhatsApp)" required>
+            <input type="text" id="state" placeholder="UF" required>
+            <input type="text" id="city" placeholder="Cidade" required>
+            <button type="submit" id="submitBtn">Enviar</button>
+        </form>
+        <p id="successMessage" class="success-message" style="display:none;">Dados enviados com sucesso!</p>
+    </div>
+</body>
+</html>
