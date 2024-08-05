@@ -13,6 +13,7 @@ body {
 .container {
     text-align: center;
     max-width: 600px;
+    width: 90%; /* Ajuste a largura para telas menores */
 }
 
 .title-image {
@@ -32,6 +33,11 @@ p {
 
 .video-container {
     margin: 20px 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
 
 form {
@@ -63,4 +69,34 @@ form input, form button {
     color: green;
     font-size: 1.2em;
     margin-top: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .description {
+        font-size: 1em; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    form input, form button {
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos inputs e botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    form input, form button {
+        font-size: 0.8em; /* Reduz ainda mais o tamanho da fonte dos inputs e botão */
+    }
+
+    #submitBtn {
+        padding: 8px; /* Ajusta o padding para telas menores */
+    }
+
+    .container {
+        width: 95%; /* Aumenta a largura da container em telas menores */
+    }
 }
