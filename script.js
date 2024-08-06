@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
             email: userForm.email.value,
             phone: userForm.phone.value,
             state: userForm.state.value,
-            city: userForm.city.value
+            city: userForm.city.value,
+            status: 'new'
         };
 
         try {
