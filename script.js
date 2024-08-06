@@ -20,15 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         e.preventDefault();
 
-        console.log(userForm.name.value)
-
         const userData = {
             name: userForm.name.value,
             email: userForm.email.value,
             phone: userForm.phone.value,
             state: userForm.state.value,
-            city: userForm.city.value,
-            status: 'new'
+            city: userForm.city.value
         };
 
         try {
